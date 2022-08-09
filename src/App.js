@@ -31,6 +31,7 @@ function App() {
         cols={cols}
         selectCell={selectCell}
       />
+      <a className='patterns' target="_blank" rel='noreferrer' href='https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life#Examples_of_patterns'>Patrones de Ejemplo</a>
     </div>
   );
 }
