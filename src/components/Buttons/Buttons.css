@@ -1,0 +1,93 @@
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.start {
+  background-color: #4caf50;
+}
+.start:hover {
+  background-color: #45a049;
+}
+.start:active {
+  background-color: #45a049;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.stop {
+  background-color: #f44336;
+}
+.stop:hover {
+  background-color: #da190b;
+}
+.stop:active {
+  background-color: #da190b;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.reset {
+  background-color: #ff9800;
+}
+
+.reset:hover {
+  background-color: #da190b;
+}
+
+.reset:active {
+  background-color: #da190b;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.step {
+  background-color: #2196f3;
+}
+
+.step:hover {
+  background-color: #0c7cd5;
+}
+
+.step:active {
+  background-color: #0c7cd5;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.gridControls {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.plusminus {
+  background-color: grey;
+  border: none;
+  color: white;
+  padding: 0 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
