@@ -10,18 +10,18 @@ export default function Buttons({ resetGrid, generation, playGame, stopGame, row
             <button className='button step' onClick={() => oneStep()}>Un paso</button>
             <div className='gridControls'>
                 <div>
-                    <button className='plusminus' onClick={() => changeGrid(rows - 1)}>-</button>
+                    <button className='plusminus' onClick={() => rows > 1 && changeGrid(rows - 1)}>-</button>
                     <label>Filas: {rows}</label>
                     <button className='plusminus' onClick={() => changeGrid(rows + 1)}>+</button>
                 </div>
                 <div>
-                    <button className='plusminus' onClick={() => changeGrid(false, cols - 1)}>-</button>
+                    <button className='plusminus' onClick={() => cols > 1 && changeGrid(false, cols - 1)}>-</button>
                     <label>Columnas: {cols}</label>
                     <button className='plusminus' onClick={() => changeGrid(false, cols + 1)}>+</button>
                 </div>
             </div>
             <div>
-                <button className='plusminus' onClick={() => changeSpeed(speed - 100)}>-</button>
+                <button className='plusminus' onClick={() => speed > 100 && changeSpeed(speed - 100)}>-</button>
                 <label>Velocidad: {speed}ms</label>
                 <button className='plusminus' onClick={() => changeSpeed(speed + 100)}>+</button>
             </div>
