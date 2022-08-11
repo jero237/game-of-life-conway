@@ -1,6 +1,7 @@
 import './App.css';
 import Buttons from './components/Buttons/Buttons';
 import Grid from './components/Grid/Grid';
+import githubLogo from './assets/github.png'
 
 // Decidí utilizar un custom Hook para el funcionamiento de todo el juego, de esta forma el código está mucho más organizado.
 import { useGame } from './hooks/useGame';
@@ -31,7 +32,10 @@ function App() {
         cols={cols}
         selectCell={selectCell}
       />
-      <a className='patterns' target="_blank" rel='noreferrer' href='https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life#Examples_of_patterns'>Patrones de Ejemplo</a>
+      <div className='linksContainer'>
+        <a className='patterns' target="_blank" rel='noreferrer' href='https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life#Examples_of_patterns'>Patrones de Ejemplo</a>
+        <a className='github' target="_blank" rel='noreferrer' href='https://github.com/jero237/game-of-life-conway'><img src={githubLogo} alt='GitHub Logo' /> GitHub</a>
+      </div>
     </div>
   );
 }
