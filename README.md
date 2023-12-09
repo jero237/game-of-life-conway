@@ -1,5 +1,2 @@
 # Conway's Game of Life algorithm visualizer
-
-### To run the project:
-
-### `npm start`
+This is a simple algorithmic project that I've made for an interview.
